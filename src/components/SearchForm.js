@@ -3,6 +3,7 @@ import React from "react";
 function SearchForm(props) {
   return (
     <form>
+      <img src="logo.png" alt="logo" />
       <div className=" form-group">
         <label htmlFor="search"></label>
         <input
