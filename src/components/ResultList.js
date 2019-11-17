@@ -2,9 +2,9 @@ import React from "react";
 
 function ResultList(props) {
   return (
-    <div className="list-group col">
+    <div className="list-group row">
       {props.results.map(result => (
-        <section className="list-group-item" key={result.id}>
+        <section className="list-group-item col" key={result.id}>
           <video
             controls
             autoPlay
@@ -15,7 +15,6 @@ function ResultList(props) {
           <br></br>
 
           <button type="button" class="btn btn-primary">
-            {" "}
             Copy GIF to Clipboard
           </button>
         </section>

@@ -3,8 +3,7 @@ import React from "react";
 function SearchForm(props) {
   return (
     <form>
-      <div className=" form-group col">
-        <h1>Safari Box</h1>
+      <div className=" form-group">
         <label htmlFor="search"></label>
         <input
           onChange={props.handleInputChange}
@@ -12,11 +11,10 @@ function SearchForm(props) {
           name="search"
           type="text"
           className="form-control"
-          placeholder="Search for an Animal"
+          placeholder="Search Safari Animal"
           id="search"
         />
-        <br></br>
-        <br></br>
+
         <button
           onClick={props.handleFormSubmit}
           className="btn btn-primary mt-3"

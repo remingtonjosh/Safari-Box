@@ -36,7 +36,7 @@ class SearchResultContainer extends Component {
 
   render() {
     return (
-      <div className="fluid">
+      <div>
         <SearchForm
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}
