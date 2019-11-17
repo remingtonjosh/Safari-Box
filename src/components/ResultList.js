@@ -14,13 +14,10 @@ function ResultList(props) {
 
           <br></br>
 
-          <a
-            href='" +
-                  response.data[i].url +
-            "'
-          >
-            " + response.data[i].url + "{" "}
-          </a>
+          <button type="button" class="btn btn-primary">
+            {" "}
+            Copy GIF to Clipboard
+          </button>
         </section>
       ))}
     </div>
