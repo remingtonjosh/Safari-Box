@@ -14,7 +14,12 @@ function ResultList(props) {
 
           <br></br>
 
-          <button type="button" class="btn btn-primary">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-url={result.url}
+            onClick={() => props.copy(result.url)}
+          >
             Copy GIF to Clipboard
           </button>
         </section>

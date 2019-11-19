@@ -34,6 +34,15 @@ class SearchResultContainer extends Component {
     this.searchGiphy(this.state.search);
   };
 
+  copyToClipboard = str => {
+    const el = document.createElement("textarea");
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+  };
+
   render() {
     return (
       <div>
@@ -42,7 +51,7 @@ class SearchResultContainer extends Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        <ResultList results={this.state.results} />
+        <ResultList results={this.state.results} copy={this.copyToClipboard} />
       </div>
     );
   }
