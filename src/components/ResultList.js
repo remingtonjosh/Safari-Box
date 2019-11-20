@@ -5,7 +5,12 @@ function ResultList(props) {
     <div className="list-group row">
       {props.results.map(result => (
         <section className="list-group-item col" key={result.id}>
-          <video autoplay controls src={result.images.downsized_small.mp4} />
+          <video
+            autoPlay
+            loop
+            controls
+            src={result.images.downsized_small.mp4}
+          />
 
           <br></br>
 

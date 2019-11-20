@@ -15,3 +15,5 @@
 ### Framework: React
 
 ### Languages used: HTML / CSS / Javascript
+
+- Notes: I am weeks old in react and I did get some assistance on the syntax.
